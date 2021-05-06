@@ -1,0 +1,63 @@
+@keyframes temp{
+  100% {transform:rotate(360deg)};
+}
+
+body{
+  background-color:aliceblue;
+}
+#clock {
+  width: 400px;
+  height: 400px;
+  margin: 20px auto;
+  border: 10px solid black;
+  border-radius: 50%;
+  position: relative;
+  
+}
+
+#seconds {
+  width: 4px;
+  height: 180px;
+  background-color: gray;
+  margin-left: 198px;
+  animation:temp 60s steps(60) infinite;
+}
+
+#minutes {
+  width: 6px;
+  height: 140px;
+  background-color: darkslategray;
+  margin-left: 198px;
+  margin-top: 20px;
+  animation:temp 3600s steps(60) infinite;
+}
+
+#hours {
+  width: 8px;
+  height: 120px;
+  background-color: black;
+  margin-left: 196px;
+  margin-top: 80px;
+  animation:temp 43200s steps(12) infinite;
+}
+#hours, #minutes, #seconds{
+  position: absolute;
+  margin-top: 50%;
+  transform-origin: center top;
+}
+
+#cuartos>*{
+  height: 10px;
+  width: 10px;
+  border:10px;
+  position: absolute;
+  background-color: black;
+}
+.c1{
+  margin-top: 0px;
+  margin-left: 50%;
+}
+.c2{
+  margin-top: 390px;
+  margin-left: 50%;
+}
